@@ -34,3 +34,16 @@ Our best picks for various needs and budgets.
 03
 The Growth of Gaming
 How the pandemic has sparked fresh opportunities.
+
+<div class="bg-green-300 md:col-span-8">01</div>
+<div class="bg-cyan-300 md:col-span-4 row-span-3 md:row-span-2">02</div>
+<div class="bg-purple-300 md:col-span-4">03</div>
+<div class="bg-yellow-300 md:col-span-4">04</div>
+<div class="bg-orange-300 md:col-span-4">05</div>
+<div class="bg-red-300 md:col-span-4">06</div>
+<div class="bg-slate-700 md:col-span-4">07</div>
+<div class="bg-amber-500 md:col-span-3">08</div>
+<div class="bg-zinc-500 md:col-span-3">09</div>
+<div class="bg-lime-500 md:col-span-3">10</div>
+<div class="bg-indigo-500 md:col-span-3">11</div>
+<div class="bg-fuchsia-500 md:col-span-12">12</div>

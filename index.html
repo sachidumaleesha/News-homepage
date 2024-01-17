@@ -8,86 +8,90 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="">
-  <div class="flex justify-center items-center">
-    <div class="max-w-[1180px] w-full">
-
-      <!-- Navigation -->
-      <nav class="py-10 grid grid-cols-12 gap-x-2">
+  <div class="flex justify-center">
+    <div class="bg-white max-w-[1180px] w-full m-10">
+      
+      <!-- Navigation Bar -->
+      <nav class="flex justify-between items-center">
+        <!-- logo -->
+        <div>
           <img src="./assets/images/logo.svg" alt="logo">
-          <p class="col-start-8 col-span-1 justify-self-end">Home</p>
-          <p class="col-span-1 justify-self-end">News</p>
-          <p class="col-span-1 justify-self-end">Popular</p>
-          <p class="col-span-1 justify-self-end">Trending</p>
-          <p class="col-span-1 justify-self-end">Categories</p>
+        </div>
+
+        <!-- links -->
+        <div class="flex gap-10 text-gray-800">
+          <p class="hover:underline cursor-pointer">Home</p>
+          <p class="hover:underline cursor-pointer">News</p>
+          <p class="hover:underline cursor-pointer">Popular</p>
+          <p class="hover:underline cursor-pointer">Trending</p>
+          <p class="hover:underline cursor-pointer">Categories</p>
+        </div>
       </nav>
 
       <!-- Hero Section -->
-      <section class="grid grid-cols-12 gap-7">
+      <section class="grid grid-cols-12 mt-10 gap-5">
         <div class="col-span-8">
-          <img src="./assets/images/image-web-3-desktop.jpg" alt="image-web-3-desktop">
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="image-web-3-desktop" class="hidden lg:inline">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="image-web-3-mobile" class="lg:hidden">
         </div>
-        <div class="bg-[#00001a] col-start-9 row-span-2 col-end-13 p-10 text-white flex flex-col justify-around gap-5">
-          <div>
-            <h1 class="text-[#e9ab53] text-4xl font-bold">New</h1>
-          </div>
-          <div class="mt-2 flex flex-col gap-2">
-            <p class="font-bold text-lg">Hydrogen VS Electric Cars</p>
+        <div class="col-span-4 row-span-2 bg-[#00001a] text-white p-5 flex flex-col gap-5 pr-10">
+          <div class="text-4xl font-bold text-[#e9ab53]">New</div>
+          <div class="flex flex-col gap-2 mt-5">
+            <p class="text-lg font-semibold">Hydrogen VS Electric Cars</p>
             <p class="text-gray-400">Will hydrogen-fueled cars ever catch up to EVs?</p>
           </div>
-          <hr>
+          <hr class="py-2">
           <div class="flex flex-col gap-2">
-            <p class="font-bold text-lg">The Downsides of AI Artistry</p>
+            <p class="text-lg font-semibold">The Downsides of AI Artistry</p>
             <p class="text-gray-400">What are the possible adverse effects of on-demand AI image generation?</p>
           </div>
-          <hr>
+          <hr class="py-2 ">
           <div class="flex flex-col gap-2">
-            <p class="font-bold text-lg">Is VC Funding Drying Up?</p>
+            <p class="text-lg font-semibold">Is VC Funding Drying Up?</p>
             <p class="text-gray-400">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
           </div>
         </div>
         <div class="col-span-4">
-          <h1 class="font-bold text-6xl">The Bright Future of Web 3.0?</h1>
+          <h1 class="text-5xl lg:text-6xl font-bold">The Bright Future of Web 3.0?</h1>
         </div>
-        <div class="col-start-5 col-end-9 flex flex-col justify-between gap-10">
-          <p class="text-gray-800 ">
+        <div class="col-span-4">
+          <p>
             We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
           </p>
-          <div class="bg-[#f15e50] max-w-[200px] px-5 py-2 text-center text-white font-mono text-lg tracking-[0.3rem] cursor-pointer">
-            <a href="#" class="inline">READ MORE</a>
-          </div>
+          <a href="#" class="bg-[#f15e50] text-white font-mono px-10 py-3 font-semibold tracking-[0.3rem] mt-10 inline-block">READ MORE</a>
         </div>
       </section>
 
-      <!-- Featured Section -->
+      <!-- Feature Section -->
       <section class="grid grid-cols-12 mt-14 gap-5">
-        <div class="col-span-4 flex gap-5">
-          <div class="bg-purple-300">
-            <img src="./assets/images/image-retro-pcs.jpg" alt="image-web-3-desktop" >
+        <div class="col-span-4 flex gap-4">
+          <div>
+            <img src="./assets/images/image-retro-pcs.jpg" alt="image-retro-pcs" class="h-full w-56">
           </div>
-          <div class="flex flex-col gap-4">
-            <p class="text-4xl font-semibold text-gray-700">01</p>
+          <div class="flex flex-col gap-2">
+            <p class="text-3xl text-gray-500 font-semibold">01</p>
             <p class="text-lg font-semibold">Reviving Retro PCs</p>
             <p class="text-gray-800">What happens when old PCs are given modern upgrades?</p>
           </div>
         </div>
-        <div class="col-span-4 flex gap-5">
+        <div class="col-span-4 flex gap-4">
           <div>
-            <img src="./assets/images/image-top-laptops.jpg" alt="image-top-laptops">
+            <img src="./assets/images/image-top-laptops.jpg" alt="image-retro-pcs" class="h-full w-56">
           </div>
-          <div class="flex flex-col gap-4">
-            <p class="text-4xl font-semibold text-gray-700">02</p>
-            <p class="text-lg font-semibold">Reviving Retro PCs</p>
-            <p class="text-gray-800">What happens when old PCs are given modern upgrades?</p>
+          <div class="flex flex-col gap-2">
+            <p class="text-3xl text-gray-500 font-semibold">02</p>
+            <p class="text-lg font-semibold">Top 10 Laptops of 2022</p>
+            <p class="text-gray-800">Our best picks for various needs and budgets.</p>
           </div>
         </div>
-        <div class="col-span-4 flex gap-5">
+        <div class="col-span-4 flex gap-4">
           <div>
-            <img src="./assets/images/image-gaming-growth.jpg" alt="image-gaming-growth">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="image-retro-pcs" class="h-full w-56">
           </div>
-          <div class="flex flex-col gap-4">
-            <p class="text-4xl font-semibold text-gray-700">03</p>
-            <p class="text-lg font-semibold">Reviving Retro PCs</p>
-            <p class="text-gray-800">What happens when old PCs are given modern upgrades?</p>
+          <div class="flex flex-col gap-2">
+            <p class="text-3xl text-gray-500 font-semibold">03</p>
+            <p class="text-lg font-semibold">The Growth of Gaming</p>
+            <p class="text-gray-800">How the pandemic has sparked fresh opportunities.</p>
           </div>
         </div>
       </section>
