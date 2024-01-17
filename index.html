@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | News homepage</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./script.js" defer></script>
 </head>
 <body class="">
   <div class="flex justify-center">
@@ -19,12 +20,28 @@
         </div>
 
         <!-- links -->
-        <div class="flex gap-10 text-gray-800">
+        <div class="md:flex gap-10 text-gray-800 hidden">
           <p class="hover:underline cursor-pointer">Home</p>
           <p class="hover:underline cursor-pointer">News</p>
           <p class="hover:underline cursor-pointer">Popular</p>
           <p class="hover:underline cursor-pointer">Trending</p>
           <p class="hover:underline cursor-pointer">Categories</p>
+        </div>
+
+        <div class="md:hidden">
+          <img src="./assets/images/menu.svg" alt="menu" class="w-10 h-10 cursor-pointer" onclick="openMenu()">
+        </div>
+
+        <!-- Sidebar Links -->
+        <div class="md:hidden gap-10 text-gray-800 fixed top-0 right-0 w-80 bg-slate-200 h-screen p-10 z-10 hidden flex-col" id="sidebarMenu">
+          <div class="flex justify-end cursor-pointer">
+            <img src="./assets/images/x.svg" alt="close-button" class="w-10 h-10" onclick="closeMenu()">
+          </div>
+          <p class="text-2xl font-semibold text-gray-700">Home</p>
+          <p class="text-2xl font-semibold text-gray-700">News</p>
+          <p class="text-2xl font-semibold text-gray-700">Popular</p>
+          <p class="text-2xl font-semibold text-gray-700">Trending</p>
+          <p class="text-2xl font-semibold text-gray-700">Categories</p>
         </div>
       </nav>
 
